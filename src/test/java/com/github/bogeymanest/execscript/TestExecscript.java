@@ -16,7 +16,7 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class TestParsing {
+public class TestExecscript {
     @Rule
     public final StandardOutputStreamLog log = new StandardOutputStreamLog(LogMode.LOG_ONLY);
     @Parameterized.Parameter
@@ -41,8 +41,8 @@ public class TestParsing {
      * @param expected The expected output file resource name
      */
     public void compileAssert(String source, String expected) {
-        InputStream srcInput = TestParsing.class.getResourceAsStream(source);
-        InputStream expInput = TestParsing.class.getResourceAsStream(expected);
+        InputStream srcInput = TestExecscript.class.getResourceAsStream(source);
+        InputStream expInput = TestExecscript.class.getResourceAsStream(expected);
         log.clear();
 
         try {
