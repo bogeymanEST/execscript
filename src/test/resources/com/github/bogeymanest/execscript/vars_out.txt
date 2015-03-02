@@ -1,0 +1,19 @@
+echo 5
+echo 4.2
+echo string value
+echo string " with quote
+echo [2, 4, a, xd]
+echo {"a": 3, "b": x, 5: 15, 6: 9}
+echo 9
+echo 10
+echo 9
+echo 13
+echo 9
+echo 36
+echo 7.2
+echo hello world!
+echo hello hello world!
+echo 3
+echo 4
+echo 1
+echo 0

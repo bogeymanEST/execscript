@@ -1,0 +1,4 @@
+echo "hello"
+alias X "echo hi"
+bind "x" echo hi
+dota_ping

@@ -1,0 +1,22 @@
+@var = 5
+@var = 4.2 //Floating point number
+@var = "string value"
+@var = "string \" with quote"
+@var = [2, 4, "a", "xd"] //List value
+@var = {"a": 3, "b": "x", 5: "15", 6: 9} //Map value
+
+//Operations with variables
+@var = 9
+@var++ //Increment numerical value by one
+@var-- //Decrement numerical value by one
+@var += 4
+@var -= 4
+@var *= 4
+@var /= 4
+
+@var = "hello"
+@var += " world!"
+//@var is now "hello world!"
+@var = "hello " + @var
+//@var is now "hello hello world!"
+

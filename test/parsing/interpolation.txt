@@ -1,0 +1,7 @@
+@var = [1, 2, 3]
+echo @{var[0]} //echo 1
+@var += 4 //Add an element to the end of the list
+echo @{var[3]} //echo 4
+
+@a = "hello"
+@b = "@{a} world!" //"hello world!"

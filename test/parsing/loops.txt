@@ -1,0 +1,19 @@
+@list = [1, 2, 3, 4]
+@for @a in @list
+    echo @{a}
+@endfor
+
+@a = 1
+@while @a < 4
+    echo @{a}
+    @a++
+@endwhile
+
+@b = 5
+@if @b == 5
+    echo b is 5!
+@elseif @b == 4
+    echo b is 4!
+@else
+    echo b is something else!
+@endif

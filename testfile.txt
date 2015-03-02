@@ -1,0 +1,37 @@
+//Syntax test file for ExecScript
+//All valid autoexec files are valid ExecScript files.
+
+//Regular autoexec script commands
+echo "Hello"
+alias X "echo Hi"
+bind "H" X
+
+//Variables
+//Variables are only available at compile-time
+
+//Assignment statements
+@var = 5 //Comment at the end of the line
+@var = 4.2 //Floating point number
+@var = "string value"
+@var = [2, 4, "a", "xd"] //List variable
+@var = {"a": 3, "b": "x", 5: "15", 6: 9} //Map variable
+
+//Operations with variables
+@var = 9
+@var++ //Increment numerical value by one
+@var-- //Decrement numerical value by one
+@var += 4
+@var -= 4
+@var *= 4
+@var /= 4
+
+@var = "hello"
+@var += " world!"
+//@var is now "hello world!"
+@var = "hello " + @var
+//@var is now "hello hello world!"
+
+@var = [1, 2, 3]
+echo @var[0] //Echos 1
+@var += 4 //Add an element to the end of the list
+echo @var[3] //Echos 4

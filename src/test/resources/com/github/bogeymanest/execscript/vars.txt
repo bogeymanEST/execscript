@@ -1,0 +1,43 @@
+@var = 5
+echo @{var}
+@var = 4.2
+echo @{var}
+@var = "string value"
+echo @{var}
+@var = "string \" with quote"
+echo @{var}
+@var = [2, 4, "a", "xd"]
+echo @{var}
+@var = {"a": 3, "b": "x", 5: "15", 6: 9}
+echo @{var}
+
+@var = 9
+echo @{var}
+@var++
+echo @{var}
+@var--
+echo @{var}
+@var += 4
+echo @{var}
+@var -= 4
+echo @{var}
+@var *= 4
+echo @{var}
+@var /= 5
+echo @{var}
+
+@var = "hello"
+@var += " world!"
+echo @{var}
+@var = "hello " + @var
+echo @{var}
+
+@map = {"a": 3, "b": "x", 5: "15", 6: 9}
+echo @{map[a]}
+@map["a"] = 4
+echo @{map[a]}
+
+@list = [1, 2, 3, 4]
+echo @{list[0]}
+@list[0] = 0
+echo @{list[0]}

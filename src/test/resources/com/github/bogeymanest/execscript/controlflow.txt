@@ -1,0 +1,41 @@
+@list = [1, 2, "string", [1, 2, 3], {1: 2, 3: 4}]
+@for @a in @list
+    echo @{a}
+@endfor
+
+@a = 1
+@while @a < 4
+    echo @{a}
+    @a++
+@endwhile
+
+@b = 5
+@if @b == 5
+    echo b is 5!
+@elseif @b == 4
+    echo b is 4!
+@else
+    echo b is something else!
+@endif
+
+@c = 9
+@if @c == 8
+    echo c is 8!
+@elseif @c == 5
+    echo c is 5
+@else
+    echo c is actually @{c}
+@endif
+
+@if @c == 8
+    echo c is 8!
+@elseif @c == 9
+    echo c is 9
+@else
+    echo c is actually @{c}
+@endif
+
+@map = {1: 2, "a": "b", "list": [1, 2, 3], "map": {1: 2, 3: 4}}
+@for @k: @v in @map
+    echo @{k} = @{v}
+@endfor

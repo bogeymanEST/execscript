@@ -1,0 +1,15 @@
+echo 1
+echo 2
+echo string
+echo [1, 2, 3]
+echo {1: 2, 3: 4}
+echo 1
+echo 2
+echo 3
+echo b is 5!
+echo c is actually 9
+echo c is 9
+echo 1 = 2
+echo a = b
+echo list = [1, 2, 3]
+echo map = {1: 2, 3: 4}
